@@ -33,7 +33,7 @@ namespace CensusAnalyserTest
             stateRecord = new Dictionary<string, CensusDTO>();
 
         }
-        //1.1 
+        //1.1 and 2.1
         [Test]
         public void GivenIndianStateCensusDataFile_ReturnCensusDataCount()
         {
@@ -42,7 +42,7 @@ namespace CensusAnalyserTest
             Assert.AreEqual(29, totalRecord.Count);
             Assert.AreEqual(32, stateRecord.Count);
         }
-        //1.2
+        //1.2 and 2.2
         [Test]
         public void GivenWrongIndianCensusDataFile_ReturnCustomException()
         {
@@ -51,7 +51,7 @@ namespace CensusAnalyserTest
             Assert.AreEqual(CensusAnalyserException.ExceptionType.FILE_NOT_FOUND, censusException.eType);
             Assert.AreEqual(CensusAnalyserException.ExceptionType.FILE_NOT_FOUND, stateException.eType);
         }
-        //1.3
+        //1.3 and 2.3
         [Test]
         public void GivenWrongIndianCensusDataFileType_ReturnCustomException()
         {
@@ -61,7 +61,7 @@ namespace CensusAnalyserTest
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_HEADER, stateException.eType);
 
         }
-        //1.4
+        //1.4 and 2.4
         [Test]
         public void GivenIndianCensusDataFile_WhenDelimiterNotProper_ReturnCustomException()
         {
@@ -70,7 +70,7 @@ namespace CensusAnalyserTest
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_DELIMITER, censusException.eType);
             Assert.AreEqual(CensusAnalyserException.ExceptionType.INCORRECT_DELIMITER, stateException.eType);
         }
-        //1.5
+        //1.5 and 2.5
         [Test]
         public void GivenIndianCensusDataFileButWrongHeader_ReturnCustomException()
         {

@@ -40,7 +40,7 @@ namespace CensusAnalyserTest
             totalRecord = censusAnalyser.LoadCensusData(Country.INDIA, indianStateCensusFilePath, indianStateCensusHeaders);
             stateRecord = censusAnalyser.LoadCensusData(Country.INDIA, indianStateCodeFilePath, indianStateCodeHeaders);
             Assert.AreEqual(30, totalRecord.Count);
-            Assert.AreEqual(37, stateRecord.Count);
+            Assert.AreEqual(33, stateRecord.Count);
         }
         //1.2
         [Test]

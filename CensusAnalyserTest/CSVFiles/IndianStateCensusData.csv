@@ -1,4 +1,4 @@
-State,Population,AreaInSqKm,DensityPerSqKm
+State,Population,AreaInSqKm,DensityInSqKm
 Uttar Pradesh,199812341,240928,828
 Maharastra,1123729,307713,365
 Bihar,103804637,94163,1102
@@ -19,7 +19,7 @@ Chattisghar,25540196,135191,189
 Haryana,25353081,44212,573
 Jammu And Kashmir,12548926,222236,57
 UttarKhand,10116752,53489,183
-Himachal Pradesh,686460255673,123
+Himachal Pradesh,686460,255673,123
 Tripura,3671032,10486,350
 Meghalaya,2964007,22429,132
 Manipur,2721756,22327,122

@@ -21,7 +21,9 @@ namespace IndianStateCensusAnalysis
             {
                 throw new CensusAnalyserException("Incorrect header in Data", CensusAnalyserException.ExceptionType.INCORRECT_HEADER);
             }
+            
             return censusData;
         }
+        
     }
 }
